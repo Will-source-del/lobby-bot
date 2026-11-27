@@ -1,0 +1,23 @@
+{
+  "botName": "LOBBY",
+  "prefix": "!",
+  "welcome": {
+    "enabled": true,
+    "channelId": ""
+  },
+  "leveling": {
+    "enabled": true,
+    "xpMin": 15,
+    "xpMax": 25,
+    "cooldownSeconds": 60
+  },
+  "moderation": {
+    "enabled": true
+  },
+  "tickets": {
+    "enabled": true
+  },
+  "logging": {
+    "enabled": true
+  }
+}
