@@ -2,6 +2,7 @@ const { Client, GatewayIntentBits, Events } = require('discord.js');
 
 const loadCommands = require('./handlers/commandHandler');
 const loadInteractions = require('./handlers/interactionHandler');
+const loadXP = require('./handlers/xpHandler');
 
 const client = new Client({
   intents: [
@@ -19,6 +20,9 @@ loadCommands(client);
 
 // Load interaction handler
 loadInteractions(client);
+
+// Load XP system
+loadXP(client);
 
 // Bot startup
 client.once(Events.ClientReady, (readyClient) => {
